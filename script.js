@@ -62,7 +62,7 @@ btnHold.addEventListener("click", function () {
   document.getElementById(`score--${activePlayer}`).textContent =
     scoresarr[activePlayer];
   // If score >= 100 player wins
-  if (scoresarr[activePlayer] >= 10) {
+  if (scoresarr[activePlayer] >= 100) {
     document.querySelector(".winner").textContent = `PLAYER ${
       activePlayer + 1
     } WON !🎉`;
@@ -99,3 +99,4 @@ function resetGame2() {
   resetGame();
 }
 btnNew.addEventListener("click", resetGame);
+
